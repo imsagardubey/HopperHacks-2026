@@ -5,7 +5,7 @@ Detect humans through walls using WiFi signals and camera pose tracking.
   Two ESP32-S3 boards create a WiFi link. When a person walks between them — even through a wall — their body disturbs the WiFi signal. Three systems detect this in parallel:
   
   1. Threshold Detector — Compares live WiFi signal variance against an empty-room baseline
-  2. CNN Model — A 4-layer neural network classifies WiFi spectrograms as "empty" or "present" (100% test accuracy)
+  2. CNN Model — A 4-layer neural network classifies WiFi spectrograms as "empty" or "present" 
   3. Camera Pose Tracking — MediaPipe tracks 33 skeletal landmarks at ~23 FPS
   A fusion state machine combines them into three states:
   - VISIBLE — Camera sees the person
